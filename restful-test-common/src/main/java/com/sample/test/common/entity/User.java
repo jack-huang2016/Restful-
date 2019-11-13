@@ -6,6 +6,8 @@
  */
 package com.sample.test.common.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -41,9 +43,11 @@ public class User {
     private int isLocked;
 
     @Column(name="update_time")
+    @DateTimeFormat(pattern="yyyy/MM/dd")
     private Date updateTime;
 
     @Column(name="create_time")
+    @DateTimeFormat(pattern="yyyy/MM/dd")
     private Date createTime;
 
     public int getId() {
