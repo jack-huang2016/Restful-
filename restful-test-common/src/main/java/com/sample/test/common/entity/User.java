@@ -43,11 +43,11 @@ public class User {
     private int isLocked;
 
     @Column(name="update_time")
-    @DateTimeFormat(pattern="yyyy/MM/dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date updateTime;
 
     @Column(name="create_time")
-    @DateTimeFormat(pattern="yyyy/MM/dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date createTime;
 
     public int getId() {
